@@ -1,0 +1,29 @@
+//Simplifies Square roots
+int k = 1;
+            for (int i = 1; i * i <= n; i++)
+            {
+                if (n % (i * i) == 0)
+                {
+                    k = i;
+                }
+            }
+            if (n / (k * k) == null)
+            {
+                WriteLine(k.ToString());
+            }
+            if (n / (k * k) == 1)
+            {
+                WriteLine(k.ToString());
+            }
+            else if (n / (k * k) > 1)
+            {
+                if (k.ToString() == "1")
+                {
+                    WriteLine("√" + (n / (k * k)).ToString());
+                }
+                else
+                {
+                    WriteLine(k.ToString() + "√" + (n / (k * k)).ToString());
+                }
+            }
+            ReadLine();
